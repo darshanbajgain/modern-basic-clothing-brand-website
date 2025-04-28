@@ -16,12 +16,12 @@ export default function AboutPage() {
 
       <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-16 md:mb-20">
         <div>
-          <Image src="/images/owner.png" alt="MANYUMI founder" width={600} height={800} className="w-full h-auto" />
+          <Image src="/images/owner.png" alt="MODERNO founder" width={600} height={800} className="w-full h-auto" />
         </div>
         <div>
           <h2 className="text-2xl font-light mb-6">The Beginning</h2>
           <p className="text-neutral-600 mb-4">
-            MANYUMI was founded in 2019 by a young Nepali entrepreneur with a vision to showcase the beauty of
+            MODERNO was founded in 2019 by a young Nepali entrepreneur with a vision to showcase the beauty of
             traditional Nepali textiles and craftsmanship to the world. Growing up surrounded by the rich textile
             heritage of Nepal, our founder was inspired to create a brand that would honor these traditions while making
             them relevant for the modern consumer.
@@ -31,7 +31,7 @@ export default function AboutPage() {
             accessories, each piece thoughtfully designed and ethically produced in Nepal.
           </p>
           <p className="text-neutral-600">
-            Today, MANYUMI continues to work directly with local artisans, ensuring fair wages and preserving
+            Today, MODERNO continues to work directly with local artisans, ensuring fair wages and preserving
             traditional techniques that have been passed down through generations.
           </p>
         </div>
@@ -41,7 +41,7 @@ export default function AboutPage() {
         <div className="order-2 md:order-1">
           <h2 className="text-2xl font-light mb-6">Our Values</h2>
           <p className="text-neutral-600 mb-4">
-            At MANYUMI, we believe in honoring tradition while embracing innovation. Our designs celebrate the intricate
+            At MODERNO, we believe in honoring tradition while embracing innovation. Our designs celebrate the intricate
             patterns and techniques of Nepali textiles, reimagined for contemporary wardrobes.
           </p>
           <p className="text-neutral-600 mb-4">
@@ -49,7 +49,7 @@ export default function AboutPage() {
             traditional, low-impact production methods that have been used in Nepal for centuries.
           </p>
           <p className="text-neutral-600">
-            We value community and are committed to supporting the livelihoods of Nepali artisans. By choosing MANYUMI,
+            We value community and are committed to supporting the livelihoods of Nepali artisans. By choosing MODERNO,
             you're not just buying a garment – you're supporting a sustainable ecosystem of craft and culture.
           </p>
         </div>

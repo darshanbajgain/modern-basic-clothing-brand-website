@@ -11,7 +11,7 @@ export default function Header() {
     <header className="py-6 px-4 sm:px-6 md:px-8 lg:px-12 border-b border-neutral-200">
       <div className="max-w-7xl mx-auto w-full flex justify-between items-center">
         <Link href="/" className="text-2xl font-light tracking-wider">
-          MANYUMI
+          MODERNO
         </Link>
 
         {/* Desktop Navigation */}
@@ -42,6 +42,7 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <button
+          type="button"
           className="md:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}

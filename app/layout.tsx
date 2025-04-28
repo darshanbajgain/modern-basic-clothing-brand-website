@@ -9,8 +9,8 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | MANYUMI",
-    default: "MANYUMI - Nepali Clothing Brand",
+    template: "%s | MODERNO",
+    default: "MODERNO - Nepali Clothing Brand",
   },
   description: "Authentic Nepali clothing with a modern, minimalist approach.",
   keywords: ["clothing", "fashion", "Nepal", "sustainable", "handcrafted"],
