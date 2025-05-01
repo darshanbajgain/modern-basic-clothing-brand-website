@@ -1,9 +1,18 @@
+// Product categories
+export const categories = [
+  { id: "tops", name: "Tops", description: "T-shirts & Casual Tops" },
+  { id: "bottoms", name: "Bottoms", description: "Jeans & Chinos" },
+  { id: "outerwear", name: "Outerwear", description: "Jackets & Coats" },
+  { id: "formal", name: "Formal", description: "Blazers & Dress Shirts" }
+];
+
 // Centralized product data
 export const products = [
   {
     id: 1,
     name: "Classic White T-Shirt",
     price: 29,
+    category: "tops",
     images: [
       "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
       "https://images.unsplash.com/photo-1622445275576-721325763afe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
@@ -21,6 +30,7 @@ export const products = [
     id: 2,
     name: "Slim Fit Jeans",
     price: 79,
+    category: "bottoms",
     images: [
       "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
       "https://images.unsplash.com/photo-1584370848010-d7fe6bc767ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
@@ -38,6 +48,7 @@ export const products = [
     id: 3,
     name: "Casual Blazer",
     price: 129,
+    category: "formal",
     images: [
       "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
       "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80",
@@ -55,6 +66,7 @@ export const products = [
     id: 4,
     name: "Knit Sweater",
     price: 89,
+    category: "tops",
     images: [
       "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80",
       "https://images.unsplash.com/photo-1434510423563-c7e99bbc5bbd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
@@ -72,6 +84,7 @@ export const products = [
     id: 5,
     name: "Chino Pants",
     price: 69,
+    category: "bottoms",
     images: [
       "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=988&q=80",
       "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
@@ -89,6 +102,7 @@ export const products = [
     id: 8,
     name: "Himalayan Wool Jacket",
     price: 129,
+    category: "outerwear",
     images: [
       "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1036&q=80"
     ],
@@ -117,4 +131,14 @@ export const getNewArrivals = (count = 3) => {
 // Helper function to get a product by ID
 export const getProductById = (id: number) => {
   return products.find(product => product.id === id);
+};
+
+// Helper function to get products by category
+export const getProductsByCategory = (categoryId: string) => {
+  return products.filter(product => product.category === categoryId);
+};
+
+// Helper function to get all categories
+export const getAllCategories = () => {
+  return categories;
 };

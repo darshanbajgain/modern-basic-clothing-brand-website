@@ -8,7 +8,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="py-6 px-4 sm:px-6 md:px-8 lg:px-12 border-b border-neutral-200">
+    <header className="py-4 px-4 sm:px-6 md:px-8 lg:px-12 border-b border-neutral-200 fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50">
       <div className="max-w-7xl mx-auto w-full flex justify-between items-center">
         <Link href="/" className="text-2xl font-light tracking-wider">
           MODERNO
